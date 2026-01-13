@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BrewAI - Smart Energy Management for Breweries. Real-time carbon tracking and energy optimization for craft brewers.">
+    <title>BrewAI™ - Energy Intelligence for Smart Breweries</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <nav class="navbar" :class="{ 'scrolled': scrolled }">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <img src="images/brewai-logo.png" alt="BrewAI Logo">
+                    </div>
+                    <button class="mobile-menu-toggle" @click="mobileMenuOpen = !mobileMenuOpen" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-links" :class="{ 'mobile-open': mobileMenuOpen }">
+                        <li><a href="#home" @click="scrollToSection('home')">Home</a></li>
+                        <li><a href="#about" @click="scrollToSection('about')">About</a></li>
+                        <li><a href="#team" @click="scrollToSection('team')">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Energy Intelligence for Smart Breweries</h1>
+                    <p class="hero-subtitle">Real-time carbon tracking and energy optimization, built for craft brewers</p>
+                    <a href="#about" class="cta-button" @click="scrollToSection('about')">
+                        Learn More →
+                    </a>
+                </div>
+                
+                <div class="screenshots">
+                    <div class="screenshot-card" v-for="(screenshot, index) in screenshots" :key="index">
+                        <img :src="'images/' + screenshot" :alt="'BrewAI App Screenshot ' + (index + 1)">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About BrewAI</h2>
+                <div class="about-content">
+                    <p class="about-intro">
+                        Developed by Anglia Ruskin University, BrewAI™ provides small and medium-sized breweries 
+                        with digital tools to improve energy efficiency and reduce their carbon footprint.
+                    </p>
+                    <p>
+                        Through automated data capture using open APIs, BrewAI™ analyses energy usage and carbon 
+                        intensity, offering real-time insights and practical recommendations. The platform helps 
+                        breweries plan production around grid carbon intensity, optimise energy use, and reduce costs.
+                    </p>
+                    <p>
+                        These features not only support sustainability goals but also prepare breweries for the 
+                        potential introduction of carbon taxes. BrewAI™ aims to support breweries in adopting 
+                        efficient and sustainable practices, contributing to a brewing industry that is better 
+                        prepared for future challenges.
+                    </p>
+                    
+                    <div class="features">
+                        <div class="feature" v-for="feature in features" :key="feature.title">
+                            <div class="feature-icon">{{ feature.icon }}</div>
+                            <h3>{{ feature.title }}</h3>
+                            <p>{{ feature.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team">
+            <div class="container">
+                <h2 class="section-title">Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member" v-for="member in team" :key="member.name">
+                        <div class="member-photo">
+                            <img :src="'images/' + member.photo" :alt="member.name">
+                        </div>
+                        <h3 class="member-name">{{ member.name }}</h3>
+                        <p class="member-title">{{ member.title }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; {{ currentYear }} BrewAI™ | Developed by Anglia Ruskin University</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
