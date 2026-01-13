@@ -457,6 +457,48 @@ body {
         grid-template-columns: 1fr;
     }
 }
+/* ===========================
+   Landscape Mobile Fix
+   =========================== */
+@media (max-width: 926px) and (orientation: landscape) {
+    .about-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .about-intro {
+        font-size: 1.05rem !important;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    /* Reduce padding for better space usage in landscape */
+    .about {
+        padding: var(--spacing-md) 0;
+    }
+    
+    .hero {
+        padding-top: calc(80px + var(--spacing-md));
+        padding-bottom: var(--spacing-md);
+    }
+}
+
+/* Extra small landscape phones (iPhone SE, etc.) */
+@media (max-width: 667px) and (orientation: landscape) {
+    .about-content p {
+        font-size: 0.9rem;
+    }
+    
+    .about-intro {
+        font-size: 1rem !important;
+    }
+}
 
 /* ===========================
    Animations
