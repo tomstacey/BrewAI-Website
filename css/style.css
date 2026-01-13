@@ -368,11 +368,39 @@ body {
     object-fit: cover;
 }
 
+.member-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: var(--spacing-xs);
+}
+
 .member-name {
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--color-dark-navy);
-    margin-bottom: var(--spacing-xs);
+    margin: 0;
+}
+
+.linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #0077B5;
+    transition: var(--transition);
+    padding: 0.25rem;
+    border-radius: 4px;
+}
+
+.linkedin-link:hover {
+    color: #005582;
+    background: rgba(0, 119, 181, 0.1);
+    transform: scale(1.1);
+}
+
+.linkedin-link svg {
+    display: block;
 }
 
 .member-title {

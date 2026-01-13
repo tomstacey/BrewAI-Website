@@ -42,28 +42,32 @@ createApp({
         description: 'Audit-level data collection and interrogation to track the impact of new technologies and green loans'
     }
 ],
-            team: [
-                {
-                    name: 'Tom Stacey',
-                    title: '',
-                    photo: 'tom.jpg'
-                },
-                {
-                    name: 'Mariia Kaliman',
-                    title: '',
-                    photo: 'mariia.jpg'
-                },
-                {
-                    name: 'Dr Franziska Sohns',
-                    title: '',
-                    photo: 'franzi.jpg'
-                },
-                {
-                    name: 'Dr Lewis Walsh',
-                    title: '',
-                    photo: 'lewis.jpg'
-                }
-            ]
+           team: [
+    {
+        name: 'Tom Stacey',
+        title: '',
+        photo: 'tom.jpg',
+        linkedin: 'https://www.linkedin.com/in/tom-stacey-20111789/'
+    },
+    {
+        name: 'Mariia Kaliman',
+        title: '',
+        photo: 'mariia.jpg',
+        linkedin: 'https://www.linkedin.com/in/mariia-kaliman5/'
+    },
+    {
+        name: 'Dr Franziska Sohns',
+        title: '',
+        photo: 'franzi.jpg',
+        linkedin: 'https://www.linkedin.com/in/dr-franziska-sohns-9564509a/'
+    },
+    {
+        name: 'Dr Lewis Walsh',
+        title: '',
+        photo: 'lewis.jpg',
+        linkedin: 'https://www.linkedin.com/in/lewis-walsh-0471a14a/'
+    }
+]
         };
     },
     mounted() {
