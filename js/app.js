@@ -19,7 +19,7 @@ createApp({
     {
         icon: '📊',
         title: 'Real-time Analysis',
-        description: 'Monitor energy usage and carbon intensity with live insights'
+        description: 'Monitor energy usage and carbon intensity with live insights - Ask AI exactly what you want to know in human language'
     },
     {
         icon: '🌱',
