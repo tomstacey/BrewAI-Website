@@ -12,34 +12,19 @@ createApp({
             ],
            features: [
     {
-        icon: '⚡',
-        title: 'Automated Data Capture',
-        description: 'Using open APIs to automatically collect and analyze your energy data'
+        icon: '🌿',
+        title: 'Automated Carbon Tracking',
+        description: 'Batch-linked Scope 1 & 2 insight from real-time energy data—less admin, fewer errors, clearer decisions.'
     },
     {
-        icon: '📊',
-        title: 'Real-time Analysis',
-        description: 'Monitor energy usage and carbon intensity with live insights - Ask AI exactly what you want to know in human language'
+        icon: '🕒',
+        title: 'Sustainable Production Timing',
+        description: 'Forecast grid carbon intensity so you can shift flexible steps to cleaner hours (and often cheaper ones too).'
     },
     {
-        icon: '🌱',
-        title: 'Carbon Optimization',
-        description: 'Plan production around grid carbon intensity to minimize footprint'
-    },
-    {
-        icon: '💰',
-        title: 'Cost Reduction',
-        description: 'Optimize energy use and prepare for future carbon taxes'
-    },
-    {
-        icon: '🔄',
-        title: 'Track Interventions',
-        description: 'Automated tracking of carbon reduction interventions using a simple "add change" feature'
-    },
-    {
-        icon: '🔍',
-        title: 'Audit-Level Data',
-        description: 'Audit-level data collection and interrogation to track the impact of new technologies and green loans'
+        icon: '🧪',
+        title: 'Intervention Evaluation',
+        description: 'Measure whether upgrades and process changes actually worked—using time-series analysis, not guesswork.'
     }
 ],
            team: [
