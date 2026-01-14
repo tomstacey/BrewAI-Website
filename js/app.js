@@ -14,7 +14,7 @@ createApp({
     {
         icon: '🌿',
         title: 'Automated Carbon Tracking',
-        description: 'Batch-linked Scope 1 & 2 insight from real-time energy data—less admin, fewer errors, clearer decisions.'
+        description: 'Batch-linked Scope 1 & 2 insight from real-time energy data means less admin, fewer errors and clearer decisions.'
     },
     {
         icon: '🕒',
@@ -24,7 +24,7 @@ createApp({
     {
         icon: '🧪',
         title: 'Intervention Evaluation',
-        description: 'Measure whether upgrades and process changes actually worked—using time-series analysis, not guesswork.'
+        description: 'Measure whether upgrades and process changes actually worked using academic analysis, not guesswork.'
     }
 ],
            team: [
