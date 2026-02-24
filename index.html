@@ -222,14 +222,27 @@
     </div>
 
     <!-- New: role line under the name -->
-    <p class="member-role">
-        {{ ({
-            'Tom Stacey': 'Co-Founder & CTO',
-            'Dr Franziska Sohns': 'Co-Founder & CEO',
-            'Mariia Kaliman': 'Project Administrator',
-            'Dr Lewis Walsh': 'Co-Founder & COO'
-        }[member.name]) || member.title }}
-    </p>
+   <p class="member-role">
+  {{
+    (function(n){
+      const key = (n || '')
+        .replace(/\./g,'')        // Dr. -> Dr
+        .replace(/\s+/g,' ')      // collapse whitespace
+        .trim();                 // remove leading/trailing spaces
+
+      const roles = {
+        'Tom Stacey': 'Co-Founder & CTO',
+        'Franziska Sohns': 'Co-Founder & CEO',
+        'Dr Franziska Sohns': 'Co-Founder & CEO',
+        'Mariia Kaliman': 'Project Administrator',
+        'Lewis Walsh': 'Co-Founder & COO',
+        'Dr Lewis Walsh': 'Co-Founder & COO'
+      };
+
+      return roles[key] || '';
+    })(member.name) || member.title
+  }}
+</p>
 
 </div>
             </div>
