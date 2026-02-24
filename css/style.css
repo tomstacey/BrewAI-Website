@@ -815,3 +815,15 @@ body {
 .team-member:nth-child(4) {
     animation-delay: 0.3s;
 }
+.member-role {
+  margin-top: 0.2rem;
+  color: var(--color-dark-navy);
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+
+@media (max-width: 768px) {
+  .member-role {
+    font-size: 0.95rem;
+  }
+}
