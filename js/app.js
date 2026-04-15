@@ -29,6 +29,18 @@ createApp({
 ],
            team: [
     {
+        name: 'Dr Lewis Walsh',
+        title: '',
+        photo: 'lewis.jpg',
+        linkedin: 'https://www.linkedin.com/in/lewis-walsh-0471a14a/'
+    },
+    {
+        name: 'Dr Franziska Sohns',
+        title: '',
+        photo: 'franzi.jpg',
+        linkedin: 'https://www.linkedin.com/in/dr-franziska-sohns-9564509a/'
+    },
+    {
         name: 'Tom Stacey',
         title: '',
         photo: 'tom.jpg',
@@ -39,18 +51,6 @@ createApp({
         title: '',
         photo: 'mariia.jpg',
         linkedin: 'https://www.linkedin.com/in/mariia-kaliman5/'
-    },
-    {
-        name: 'Dr Franziska Sohns',
-        title: '',
-        photo: 'franzi.jpg',
-        linkedin: 'https://www.linkedin.com/in/dr-franziska-sohns-9564509a/'
-    },
-    {
-        name: 'Dr Lewis Walsh',
-        title: '',
-        photo: 'lewis.jpg',
-        linkedin: 'https://www.linkedin.com/in/lewis-walsh-0471a14a/'
     }
 ]
         };
