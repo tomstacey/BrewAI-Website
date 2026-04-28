@@ -70,23 +70,63 @@ body {
 
 .logo {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
 }
 
 .logo img {
-    height: 65px;
+    height: 90px;
     width: auto;
     transition: var(--transition);
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.logo .logo-brewai {
+    height: 90px;
+}
+
+.logo .logo-aru {
+    height: 52px;
+    border-left: 1px solid var(--color-border);
+    padding-left: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
 }
 
 .logo img:hover {
     transform: scale(1.05);
 }
 
-/* Make logo even bigger on larger screens */
 @media (min-width: 1024px) {
     .logo img {
-        height: 75px;
+        height: 100px;
+    }
+    .logo .logo-brewai {
+        height: 100px;
+    }
+    .logo .logo-aru {
+        height: 58px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        gap: 0.6rem;
+    }
+    .logo img {
+        height: 60px;
+    }
+    .logo .logo-brewai {
+        height: 60px;
+    }
+    .logo .logo-aru {
+        height: 36px;
+        padding-left: 0.6rem;
     }
 }
 
@@ -756,6 +796,71 @@ body {
 
     .about-intro {
         font-size: 1rem !important;
+    }
+}
+
+/* ===========================
+   Nav login button
+   =========================== */
+.nav-links a.nav-login {
+    background: var(--color-primary);
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1.25rem;
+}
+
+.nav-links a.nav-login:hover {
+    background: var(--color-primary-dark);
+    color: white;
+}
+
+/* ===========================
+   Partner Logos Strip
+   =========================== */
+.partners-strip {
+    background: var(--color-bg-light);
+    padding: var(--spacing-md) 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.partners-strip__label {
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+}
+
+.partners-strip__logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.partner-logo {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+}
+
+.partner-logo--aru {
+    height: 58px;
+}
+
+@media (max-width: 600px) {
+    .partner-logo {
+        height: 36px;
+    }
+    .partner-logo--aru {
+        height: 44px;
+    }
+    .partners-strip__logos {
+        gap: 1.5rem;
     }
 }
 
