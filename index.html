@@ -37,23 +37,18 @@
         <section id="home" class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-title">Brew Smarter. Brew Greener.</h1>
+                    <h1 class="hero-title">See your energy, step by step.</h1>
 
                     <p class="hero-subtitle">
-                        BrewAI is a research project from Anglia Ruskin University, developing practical carbon and energy intelligence
-                        for beverage producers. We work directly with breweries to cut emissions, reduce costs, and build knowledge across the industry.
-                    </p>
-
-                    <p class="hero-micro">
-                        Privacy-first by design · Supported by Innovate UK ICURe and EIT Food
+                        Brewing has three live problems: volatile energy costs, carbon reporting pressure, and no clear view of where emissions come from in your process. BrewAI pulls real-time data from your existing brewery kit, maps it to mash, boil, fermentation and packaging, and shows where cost and carbon are built. We're a working SaaS platform built on university research, piloting with real breweries and on track for commercial spinout.
                     </p>
 
                     <div class="hero-cta">
                         <a href="#about" class="cta-button secondary" @click="scrollToSection('about')">
                             See how it works
                         </a>
-                        <a href="assets/BrewAI-Research-Poster.pdf" class="cta-button tertiary" target="_blank" rel="noopener">
-                            Read the latest research
+                        <a href="#contact" class="cta-button tertiary" @click="scrollToSection('contact')">
+                            Join the pilot
                         </a>
                     </div>
                 </div>
@@ -69,7 +64,7 @@
         <!-- Partner Logos Strip -->
         <section class="partners-strip">
             <div class="container">
-                <p class="partners-strip__label">Developed at Anglia Ruskin University · Funded and supported by</p>
+                <p class="partners-strip__label">Developed and supported by</p>
                 <div class="partners-strip__logos">
                     <img src="images/aru-logo.png" alt="Anglia Ruskin University" class="partner-logo partner-logo--aru">
                     <img src="images/innovate-uk-icure.jpg" alt="Innovate UK ICURe" class="partner-logo">
@@ -85,60 +80,43 @@
                 <div class="about-content">
 
                     <p class="about-intro">
-                        BrewAI is a research project developed at Anglia Ruskin University (ARU), in collaboration with EIT Food and supported
-                        by Innovate UK ICURe. Working directly with breweries and beverage producers, we are building practical tools to
-                        measure, understand, and reduce the carbon footprint of production — at every scale.
+                        BrewAI gives breweries step-level visibility into where energy, cost and carbon actually go in production — and what to do about it.
                     </p>
 
-                    <!-- Why now -->
+                    <!-- What step-level energy data unlocks -->
                     <div class="why-now">
                         <div class="why-card">
-                            <div class="why-icon">🧑‍🤝‍🧑</div>
-                            <h3>Consumers care</h3>
-                            <p>Sustainability is shifting from “nice to have” to a buying signal.</p>
+                            <div class="why-icon">⏱️</div>
+                            <h3>Tariff timing</h3>
+                            <p>Shift flexible loads — CIP, packaging, ancillary cooling — to lower-cost, lower-carbon hours.</p>
                         </div>
                         <div class="why-card">
-                            <div class="why-icon">📜</div>
-                            <h3>Regulation tightens</h3>
-                            <p>Carbon disclosure pressure is moving down supply chains.</p>
+                            <div class="why-icon">🧪</div>
+                            <h3>Real intervention measurement</h3>
+                            <p>Prove whether a heat exchanger, process change or kit upgrade actually moved the number.</p>
                         </div>
                         <div class="why-card">
-                            <div class="why-icon">⚡</div>
-                            <h3>Costs stay volatile</h3>
-                            <p>Energy price swings make planning—and proof—more important than ever.</p>
+                            <div class="why-icon">📊</div>
+                            <h3>Disclosure that holds up</h3>
+                            <p>Carbon reporting backed by your real production data, not industry averages.</p>
                         </div>
                     </div>
-
-                    <p>
-                        BrewAI™ is our attempt to make low-carbon brewing practical at every scale.
-                        We capture production-linked energy data, translate it into clear carbon insight, and then use analytics and AI to
-                        surface opportunities to reduce emissions and cost.
-                    </p>
 
                     <!-- Expandable longer story -->
                     <details class="home-details">
                         <summary><strong>Read the longer story</strong></summary>
                         <div class="details-body">
                             <p>
-                                <strong>This is a university-led research project with real-world impact.</strong>
-                                Led by Anglia Ruskin University and backed by Innovate UK ICURe and EIT Food, BrewAI is building
-                                an intelligent network of beverage producers of all sizes — collecting real-time energy and carbon data,
-                                spotting patterns across equipment, process steps, seasons and tariffs, and turning those patterns into
-                                practical decisions.
+                                <strong>What we do.</strong>
+                                BrewAI installs alongside your existing brewery kit. We capture real-time energy data at the equipment and meter level, attribute it to the production step it powered (mash, boil, fermentation, CIP, packaging), and convert that into cost and carbon visibility per batch, per shift, per step. When you change something, we measure whether it worked.
                             </p>
                             <p>
-                                <strong>From measurement to action:</strong> our platform helps producers track emissions in near real-time,
-                                forecast cleaner production timing, and evaluate whether interventions actually worked — using academic
-                                rigour rather than assumptions.
+                                <strong>What we are right now.</strong>
+                                BrewAI is a university research project at Anglia Ruskin University with a working SaaS platform, in pilot with real breweries and running on real production data. We are funded through Innovate UK iCURE Stage 3 and on a path to commercial spinout. The hybrid status is the point: the data is real, the science is honest, and the product is on a commercialisation track.
                             </p>
                             <p>
-                                <strong>Privacy is core, not an afterthought.</strong> Breweries remain in control of their data.
-                                Benchmarking is designed to be secure so participants can learn from the network without exposing
-                                commercially sensitive detail.
-                            </p>
-                            <p>
-                                <strong>We are iterating directly with producers.</strong> As an active research project, we invite
-                                beverage makers to help shape what “useful” means in practice — your involvement directly informs the research.
+                                <strong>Privacy and benchmarking.</strong>
+                                Breweries own their data. Benchmarking is designed so participants can learn from the network without exposing commercially sensitive detail — neither what you brew nor how much.
                             </p>
                         </div>
                     </details>
@@ -150,19 +128,6 @@
                             <h3>{{ feature.title }}</h3>
                             <p>{{ feature.description }}</p>
                         </div>
-                    </div>
-
-                    <!-- Trust block -->
-                    <div class="trust-block">
-                        <h3>A university research project</h3>
-                        <p>
-                            BrewAI is developed at Anglia Ruskin University and backed by Innovate UK ICURe and EIT Food. Our research
-                            is built around privacy-first data capture, clear consent, and secure benchmarking — so breweries can
-                            collaborate and learn from the network without exposing commercially sensitive data.
-                        </p>
-                        <p class="trust-footnote">
-                            Developed by Anglia Ruskin University · Supported by Innovate UK ICURe and EIT Food · In association with The LBA
-                        </p>
                     </div>
 
                     <!-- In action photo strip -->
