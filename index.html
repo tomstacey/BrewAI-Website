@@ -167,12 +167,50 @@
                 <!-- Contact loop closure -->
                 <div id="contact" class="contact-callout">
                     <h3>Want to join the pilot?</h3>
-                    <p>
-                        The quickest way to get involved is to message us on LinkedIn.
-                        Click any LinkedIn icon below and send a short note with your brewery/producer name and what you’re hoping to measure.
+                    <p>Tell us a bit about your brewery and what you want to measure. We'll be in touch.</p>
+
+                    <!--
+                        TODO: Form endpoint not yet wired. Configure Formspree / Netlify Forms /
+                        serverless handler and replace action="" + remove the onsubmit fallback.
+                        Until then, the LinkedIn note below remains the active route.
+                    -->
+                    <form class="pilot-form"
+                          action=""
+                          method="POST"
+                          onsubmit="event.preventDefault(); document.getElementById('pilot-form-fallback').hidden = false; this.querySelector('button[type=submit]').disabled = true;">
+                        <div class="form-row">
+                            <label>
+                                Your name
+                                <input type="text" name="name" required autocomplete="name">
+                            </label>
+                            <label>
+                                Brewery name
+                                <input type="text" name="brewery" required autocomplete="organization">
+                            </label>
+                        </div>
+                        <div class="form-row">
+                            <label>
+                                Rough production volume
+                                <input type="text" name="volume" placeholder="e.g. 1,500 HL/year">
+                            </label>
+                            <label>
+                                Contact email
+                                <input type="email" name="email" required autocomplete="email">
+                            </label>
+                        </div>
+                        <label>
+                            What do you want to measure? <span class="form-optional">(optional)</span>
+                            <textarea name="goals" rows="3" placeholder="e.g. boil energy, CIP carbon impact, fermentation tariff timing"></textarea>
+                        </label>
+                        <button type="submit" class="cta-button primary">Request pilot info</button>
+                    </form>
+
+                    <p class="contact-fallback" id="pilot-form-fallback" hidden>
+                        <strong>Form not yet live.</strong> While we're wiring up submissions, please send a quick LinkedIn note to any team member below — short note with your brewery name and what you want to measure is plenty.
                     </p>
-                    <p class="contact-hint">
-                        Tip: If you’re unsure who to message, pick whoever’s role looks closest — we’ll route it internally.
+
+                    <p class="contact-fallback contact-fallback--temporary">
+                        <em>Temporary:</em> the form above is a placeholder while we wire up submissions. For now, a LinkedIn message to any team member below is the fastest route in.
                     </p>
                 </div>
 
