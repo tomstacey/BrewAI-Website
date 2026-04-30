@@ -30,25 +30,25 @@ createApp({
            team: [
     {
         name: 'Dr Franziska Sohns',
-        title: '',
+        role: 'Co-Founder & CEO',
         photo: 'franzi.jpg',
         linkedin: 'https://www.linkedin.com/in/dr-franziska-sohns-9564509a/'
     },
     {
         name: 'Dr Lewis Walsh',
-        title: '',
+        role: 'Co-Founder & COO',
         photo: 'lewis.jpg',
         linkedin: 'https://www.linkedin.com/in/lewis-walsh-0471a14a/'
     },
     {
         name: 'Tom Stacey',
-        title: '',
+        role: 'Co-Founder, CTO & Head of Brand',
         photo: 'tom.jpg',
         linkedin: 'https://www.linkedin.com/in/tom-stacey-20111789/'
     },
     {
         name: 'Mariia Kaliman',
-        title: '',
+        role: 'Project Administrator',
         photo: 'mariia.jpg',
         linkedin: 'https://www.linkedin.com/in/mariia-kaliman5/'
     }
