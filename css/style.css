@@ -724,6 +724,23 @@ body {
 }
 
 /* ===========================
+   Pilot signup section
+   =========================== */
+.pilot {
+    padding: var(--spacing-lg) 0 var(--spacing-xl);
+    background: var(--color-bg-light);
+}
+
+.pilot .contact-callout {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pilot .contact-callout .section-title {
+    margin-bottom: var(--spacing-xs);
+}
+
+/* ===========================
    Team Section
    =========================== */
 .team {
