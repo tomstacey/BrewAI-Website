@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BrewAI™ - Carbon and energy intelligence built with beverage producers. Track emissions, forecast cleaner production timing, and evaluate interventions—with privacy at the core.">
     <title>BrewAI™ - Brew Smarter. Brew Greener.</title>
-    <link rel="stylesheet" href="css/style.css?v=20260430a">
+    <link rel="stylesheet" href="css/style.css?v=20260502a">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
@@ -37,10 +37,16 @@
         <section id="home" class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-title">See your energy, step by step.</h1>
+                    <h1 class="hero-title">Understand your carbon footprint. Improve it step by step.</h1>
 
                     <p class="hero-subtitle">
-                        Brewing has three live problems: volatile energy costs, carbon reporting pressure, and no clear view of where emissions come from in your process. BrewAI pulls real-time data from your existing brewery kit, maps it to mash, boil, fermentation and packaging, and shows where cost and carbon are built. We're a working SaaS platform built on university research, piloting with real breweries and on track for commercial spinout.
+                        Energy-intensive businesses face three live challenges: volatile energy costs, growing carbon reporting pressure, and limited visibility into where emissions and costs are generated across operations.
+                    </p>
+                    <p class="hero-subtitle">
+                        BrewAI converts operational data into carbon intelligence. By integrating real-time and bill-based data, it links energy use to production processes, shows where cost and carbon are created, and estimates the impact of operational interventions — enabling targeted, measurable improvements.
+                    </p>
+                    <p class="hero-subtitle">
+                        Built on research at Anglia Ruskin University, BrewAI is a working SaaS platform currently piloting with breweries, with applications extending to other energy-intensive sectors.
                     </p>
 
                     <div class="hero-cta">
@@ -49,6 +55,9 @@
                         </a>
                         <a href="#contact" class="cta-button tertiary" @click="scrollToSection('contact')">
                             Join the pilot
+                        </a>
+                        <a href="assets/BrewAI-Research-Poster.pdf" class="cta-button tertiary" target="_blank" rel="noopener">
+                            Read the research
                         </a>
                     </div>
                 </div>
@@ -80,25 +89,28 @@
                 <div class="about-content">
 
                     <p class="about-intro">
-                        BrewAI gives breweries step-level visibility into where energy, cost and carbon actually go in production — and what to do about it.
+                        BrewAI gives businesses visibility into where energy use and carbon emissions are generated across different stages of their operations — and what to do about it.
                     </p>
 
-                    <!-- What step-level energy data unlocks -->
-                    <div class="why-now">
-                        <div class="why-card">
-                            <div class="why-icon">⏱️</div>
-                            <h3>Tariff timing</h3>
-                            <p>Shift flexible loads — CIP, packaging, ancillary cooling — to lower-cost, lower-carbon hours.</p>
+                    <!-- Value tiles: what BrewAI does for you -->
+                    <div class="value-tiles">
+                        <div class="value-tile">
+                            <div class="value-icon">📊</div>
+                            <h3 class="value-title">Reporting from your real data</h3>
+                            <p class="value-tagline">Carbon reporting based on your operational data — not industry averages.</p>
+                            <p class="value-body">BrewAI tracks carbon automatically by linking your real-time and bill data to operations, giving you continuous Scope 1 and 2 figures with minimal manual input.</p>
                         </div>
-                        <div class="why-card">
-                            <div class="why-icon">🧪</div>
-                            <h3>Real intervention measurement</h3>
-                            <p>Prove whether a heat exchanger, process change or kit upgrade actually moved the number.</p>
+                        <div class="value-tile">
+                            <div class="value-icon">⏱️</div>
+                            <h3 class="value-title">Smart energy timing</h3>
+                            <p class="value-tagline">Shift flexible loads to lower-cost, lower-carbon periods.</p>
+                            <p class="value-body">BrewAI forecasts grid carbon intensity and flags cleaner, cheaper periods to run your flexible processes.</p>
                         </div>
-                        <div class="why-card">
-                            <div class="why-icon">📊</div>
-                            <h3>Disclosure that holds up</h3>
-                            <p>Carbon reporting backed by your real production data, not industry averages.</p>
+                        <div class="value-tile">
+                            <div class="value-icon">🧪</div>
+                            <h3 class="value-title">Measure what actually works</h3>
+                            <p class="value-tagline">Quantify the impact of process changes and operational interventions.</p>
+                            <p class="value-body">BrewAI measures the before and after of every upgrade or process change you make, so you know what actually moved the needle.</p>
                         </div>
                     </div>
 
@@ -108,27 +120,22 @@
                         <div class="details-body">
                             <p>
                                 <strong>What we do.</strong>
-                                BrewAI installs alongside your existing brewery kit. We capture real-time energy data at the equipment and meter level, attribute it to the production step it powered (mash, boil, fermentation, CIP, packaging), and convert that into cost and carbon visibility per batch, per shift, per step. When you change something, we measure whether it worked.
+                                BrewAI integrates with your existing equipment and data sources to capture real-time and bill-based energy data. It links this data to operational processes, providing visibility into where energy use and carbon emissions are generated across production. This enables consistent monitoring across batches, shifts and process stages — and lets you measure whether changes actually delivered an impact.
                             </p>
                             <p>
                                 <strong>What we are right now.</strong>
-                                BrewAI is a university research project at Anglia Ruskin University with a working SaaS platform, in pilot with real breweries and running on real production data. We are funded through Innovate UK iCURE Stage 3 and on a path to commercial spinout. The hybrid status is the point: the data is real, the science is honest, and the product is on a commercialisation track.
+                                BrewAI is a university research project at Anglia Ruskin University with a working SaaS platform, currently piloting with breweries as an initial use case and running on real operational data. The project is funded through Innovate UK ICURe Explore and is progressing towards commercial spinout. This hybrid position is intentional: the data is real, the analysis is grounded in research, and the platform is being developed for scalable commercial deployment across energy-intensive sectors.
+                            </p>
+                            <p>
+                                <strong>What's next?</strong>
+                                Today, BrewAI measures and evaluates interventions. Next, we are developing digital twin capabilities to simulate changes and predict their impact before implementation.
                             </p>
                             <p>
                                 <strong>Privacy and benchmarking.</strong>
-                                Breweries own their data. Benchmarking is designed so participants can learn from the network without exposing commercially sensitive detail — neither what you brew nor how much.
+                                Customers retain full ownership of their data. Benchmarking is designed to enable learning across participants without exposing commercially sensitive information, ensuring that operational details remain confidential while still providing meaningful comparative insight.
                             </p>
                         </div>
                     </details>
-
-                    <!-- Feature cards (Vue) -->
-                    <div class="features">
-                        <div class="feature" v-for="feature in features" :key="feature.title">
-                            <div class="feature-icon">{{ feature.icon }}</div>
-                            <h3>{{ feature.title }}</h3>
-                            <p>{{ feature.description }}</p>
-                        </div>
-                    </div>
 
                     <!-- In action photo strip -->
                     <div class="in-action">
@@ -243,6 +250,6 @@
         </footer>
     </div>
 
-    <script src="js/app.js?v=20260430"></script>
+    <script src="js/app.js?v=20260502"></script>
 </body>
 </html>
