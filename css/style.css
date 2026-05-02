@@ -438,6 +438,7 @@ body {
 
 .hero-content {
     text-align: center;
+    padding-top: 12px;
     margin-bottom: var(--spacing-lg);
     max-width: 950px;
     margin-left: auto;
