@@ -1,0 +1,169 @@
+/* =============================================================
+   BrewAI — Colors & Type foundations
+   Derived from tomstacey/BrewAI-Website (marketing site) and
+   tomstacey/BrewAI frontend (product app).
+   ============================================================= */
+
+/* ---------- Webfonts ----------
+   The BrewAI marketing site uses the native system stack
+   (-apple-system / Segoe UI / Roboto). The app uses the same.
+   To get a consistent cross-platform face for slides + mocks,
+   we standardise on Inter (closest Google Fonts match to
+   SF Pro / Segoe UI). Flag: no bespoke BrewAI font — Inter is a
+   substitution.
+-------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* ---------- Brand Core ---------- */
+  /* Primary green — from the marketing site CSS. The "greener"
+     side of "Brew Smarter. Brew Greener." */
+  --brand-primary:        #00D98C;
+  --brand-primary-dark:   #00B374;
+  --brand-primary-soft:   rgba(0, 217, 140, 0.10);
+  --brand-primary-softer: rgba(0, 217, 140, 0.25);
+
+  /* Deep navy — headings, footer, product chrome */
+  --brand-navy:           #1E293B;
+  --brand-navy-deep:      #0F172A;
+  --brand-navy-abyss:     #020617;
+
+  /* Product-app accents (from /frontend index.css + App.css).
+     The dashboard uses a blue/cyan + orange pair for data viz. */
+  --accent-blue:          #42A5F5;
+  --accent-blue-soft:     #90CAF9;
+  --accent-cyan:          #38BDF8;
+  --accent-warm:          #F97316;   /* Carbon line in charts */
+  --accent-leaf:          #4ADE80;   /* Energy line + sparkline */
+
+  /* ---------- Neutrals ---------- */
+  --fg-1:   #0F172A;   /* near-black, high-emphasis text on light */
+  --fg-2:   #1E293B;   /* body heading */
+  --fg-3:   #334155;   /* body copy */
+  --fg-4:   #64748B;   /* muted / captions */
+  --fg-5:   #94A3B8;   /* disabled / hints */
+
+  --bg-1:   #FFFFFF;   /* canvas */
+  --bg-2:   #F8FAFC;   /* subtle section */
+  --bg-3:   #F1F5F9;   /* card alt */
+  --border: #E2E8F0;
+
+  /* ---------- Dark surfaces (product) ---------- */
+  --dark-bg:          #0B1020;
+  --dark-bg-elevated: #121829;
+  --dark-bg-card:     #181F33;
+  --dark-bg-stat:     #10141C;
+  --dark-border:      rgba(255,255,255,0.07);
+  --dark-border-soft: rgba(255,255,255,0.06);
+  --dark-fg-1:        #F5F7FF;
+  --dark-fg-2:        #E5E7EB;
+  --dark-fg-muted:    #9CA3AF;
+  --dark-fg-dim:      #6B7280;
+
+  /* ---------- Semantic ---------- */
+  --success:  #22C55E;
+  --success-soft: rgba(34,197,94,0.15);
+  --warning:  #FACC15;
+  --danger:   #EF4444;
+  --danger-bg: #2C0B0F;
+  --info:     #3B82F6;
+  --info-soft: rgba(59,130,246,0.08);
+
+  /* ---------- Shadows & Radius ---------- */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  --shadow-xs: 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 14px rgba(0,217,140,0.30);   /* brand glow on primary buttons */
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.08);
+  --shadow-xl: 0 22px 45px rgba(15,23,42,0.9);    /* dark chart card */
+
+  /* ---------- Spacing ---------- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+
+  /* ---------- Type scale ---------- */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace;
+
+  --fs-display:   clamp(2.5rem, 5vw, 3.5rem);  /* hero */
+  --fs-h1:        clamp(2rem, 4vw, 2.75rem);   /* section title */
+  --fs-h2:        1.5rem;
+  --fs-h3:        1.2rem;
+  --fs-lead:      1.2rem;
+  --fs-body:      1rem;
+  --fs-small:     0.9rem;
+  --fs-caption:   0.8rem;
+  --fs-eyebrow:   0.75rem;
+
+  --lh-tight: 1.2;
+  --lh-snug:  1.4;
+  --lh-body:  1.6;
+  --lh-loose: 1.8;
+
+  --tracking-tight: -0.02em;
+  --tracking-eyebrow: 0.12em;
+
+  --transition: all 0.3s ease;
+}
+
+/* ---------- Semantic type classes ---------- */
+body, .body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--fg-3);
+}
+.display, h1.display {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  font-size: var(--fs-display);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--brand-navy);
+}
+h1, .h1 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: var(--fs-h1);
+  line-height: var(--lh-tight);
+  color: var(--brand-navy);
+}
+h2, .h2 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-h2);
+  color: var(--brand-navy);
+}
+h3, .h3 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-h3);
+  color: var(--brand-navy);
+}
+.lead {
+  font-size: var(--fs-lead);
+  color: var(--fg-4);
+  line-height: var(--lh-snug);
+}
+.caption, small {
+  font-size: var(--fs-caption);
+  color: var(--fg-4);
+}
+.eyebrow {
+  font-size: var(--fs-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-eyebrow);
+  color: var(--fg-4);
+  font-weight: 500;
+}
+code, .mono {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
