@@ -35,16 +35,11 @@ createApp({
         linkedin: 'https://www.linkedin.com/in/dr-franziska-sohns-9564509a/'
     },
     {
-        name: 'Dr Lewis Walsh',
-        role: 'Co-Investigator',
-        photo: 'lewis.jpg',
-        linkedin: 'https://www.linkedin.com/in/lewis-walsh-0471a14a/'
-    },
-    {
         name: 'Tom Stacey',
         role: 'Tech Lead',
         photo: 'tom.jpg',
-        linkedin: 'https://www.linkedin.com/in/tom-stacey-20111789/'
+        linkedin: 'https://www.linkedin.com/in/tom-stacey-20111789/',
+        website: 'https://www.tomstacey.co.uk'
     },
     {
         name: 'Mariia Kaliman',

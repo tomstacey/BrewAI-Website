@@ -789,6 +789,12 @@ body {
     object-fit: cover;
 }
 
+.member-photo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .member-info {
     display: flex;
     flex-direction: column;
